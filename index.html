@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/_css/style.css">
-    <link rel="shortcut icon" href="assets/_imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>FlexBlog</title>
 </head>
@@ -24,21 +24,21 @@
             <div class="menu-logo">
                 <a href="#">FlexBlog</a>
             </div>
-            <nav class="menu-nav">  
+            <nav id="navMenu" class="menu-nav active">  
                 <ul>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#products">Produtos</a></li>
                     <li><a href="#price">Preço</a></li>
                     <li><a href="#quality">Qualidade</a></li>
                 </ul>
-                <i id="showMenu" class="bi bi-list"></i>
+                <i id="showMenu" class="bi bi-list"></i> 
+                <i id="closeMenu" class="bi bi-x"></i>  
             </nav>
         </div>
 
         <!-- #region Menu mobile-->
         
-        <div id="menu-mobile" class="menu-mobile">
-            <i id="closeMobile" class="bi bi-x"></i>
+        <div id="menu-mobile" class="menu-mobile">  
             <nav class="mobile-nav">
                 <ul>
                     <li><a href="#about">Sobre</a></li>
@@ -47,7 +47,7 @@
                     <li><a href="#quality">Qualidade</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> 
 
     </header>
 
@@ -62,10 +62,10 @@
             <p>O temos que ter sempre em mente é que a determinação clara de objectivos afecta positivamente a correcta previsão das condições inegavelmente</p>
         </div>
         <div class="about-img">
-            <img src="assets/_imagens/sobre1.jpg" alt="about 1">
+            <img src="assets/imagens/sobre1.jpg" alt="about 1">
         </div>
         <div class="about-img">
-            <img src="assets/_imagens/sobre2.jpg" alt="about 2">
+            <img src="assets/imagens/sobre2.jpg" alt="about 2">
         </div>   
     </section>
 
@@ -74,15 +74,15 @@
         <div class="products-container">
             <div class="product-item purple">
                 <h2>Purple</h2>
-                <img src="assets/_imagens/produtos1.jpg" alt="Product 1">
+                <img src="assets/imagens/produtos1.jpg" alt="Product 1">
             </div>
             <div class="product-item pink">
                 <h2>Pink</h2>
-                <img src="assets/_imagens/produtos2.jpg" alt="Product 2">
+                <img src="assets/imagens/produtos2.jpg" alt="Product 2">
             </div>
             <div class="product-item blue">
                 <h2>Blue</h2>
-                <img src="assets/_imagens/produtos3.jpg" alt="Product 3">
+                <img src="assets/imagens/produtos3.jpg" alt="Product 3">
             </div>
         </div>
     </section>
@@ -173,6 +173,6 @@
         <p>FlexBlog © Todos os direitos reservados</p>
     </footer>
 
-    <script src="assets/_js/apps.js"></script>
+    <script src="assets/js/apps.js"></script>
 </body>
 </html>

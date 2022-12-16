@@ -25,6 +25,7 @@
     box-sizing: border-box;
     list-style: none;
     color: var(--corLet);
+    
 }
 
 i {
@@ -32,6 +33,8 @@ i {
     font-size: 2em;
     color: var(--corSupInfoLet);
     cursor: pointer;
+    padding: 0;
+    margin-right: 5px;
 }
 
 img {
@@ -107,38 +110,10 @@ a {
 }
 
 /*Menu mobile*/
-.menu-nav i {
-    display: none;
-    font-size: 2.25em;
-    padding: 0 5px;
+
+#menu-mobile {
+    display: none; 
 }
-
-.menu-mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    height: 100vh;
-    color: var(--corLet);
-    position: fixed;
-    left: 100%;
-    transition: .5s;
-    z-index: 5;
-    top: 0;
-}
-
-
-.menu-mobile i {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--corSupInfoLet);
-    background: var(--corCab);
-    font-size: 3.5em;
-    padding: 0;
-}
-
 
 .menu-mobile ul {
     max-width: 90%;
@@ -152,15 +127,23 @@ a {
     display: block;
     color: var(--corSupInfoLet);
     margin: 30px auto 20px auto;
-    font-size: 2.25em;
-    border-bottom: 4px solid var(--corCab);   
+    font-size: 2em;
 }
-
 
 #menu-mobile.active {
     display: block;
-    left: 0;
+    height: auto;
+    
 }
+
+#showMenu {
+    display:none;
+}
+
+i#closeMenu {
+    display: none;
+}
+
 
 /* main intro h1*/
 
@@ -354,10 +337,20 @@ span sup {
 
     .menu-nav ul {
         display: none; 
-    } 
-       
-    .menu-nav i {
+    }
+
+    #showMenu {
         display: block;
+    } 
+
+    i#closeMenu.active {
+        display: block;
+        transition: .3s;
+    }
+
+    i#showMenu.active {
+        display: none;
+        transition: .3s;
     }
 }
 
